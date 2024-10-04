@@ -1,0 +1,17 @@
+00:00:00.541596 VirtualBox GUI VM Selector Window 6.1.34 r150636 win.amd64 (Mar 23 2022 00:36:21) release log
+00:00:00.541599 Log opened 2024-09-30T13:13:04.566675400Z
+00:00:00.541601 Build Type: release
+00:00:00.541607 OS Product: Windows 11
+00:00:00.541608 OS Release: 10.0.22631
+00:00:00.541609 OS Service Pack: 
+00:00:00.556897 DMI Product Name: Victus by HP Gaming Laptop 15-fb1xxx
+00:00:00.561725 DMI Product Version:  
+00:00:00.561744 Firmware type: UEFI
+00:00:00.562268 Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.562292 Host RAM: 15573MB (15.2GB) total, 9297MB (9.0GB) available
+00:00:00.562297 Executable: C:\Program Files\Oracle\VirtualBox\VirtualBox.exe
+00:00:00.562298 Process ID: 17508
+00:00:00.562299 Package type: WINDOWS_64BITS_GENERIC
+00:00:00.562521 Qt version: 5.6.2
+00:00:00.576177 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.176501 GUI: UIMediumEnumerator: Medium-enumeration finished!

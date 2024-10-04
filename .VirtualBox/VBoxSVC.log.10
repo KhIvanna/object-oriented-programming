@@ -1,0 +1,47 @@
+00:00:00.002436 main     VirtualBox COM Server 6.1.34 r150636 win.amd64 (Mar 23 2022 00:36:21) release log
+00:00:00.002437 main     Log opened 2024-09-14T09:19:22.373988300Z
+00:00:00.002438 main     Build Type: release
+00:00:00.002442 main     OS Product: Windows 11
+00:00:00.002443 main     OS Release: 10.0.22631
+00:00:00.002443 main     OS Service Pack: 
+00:00:00.021603 main     DMI Product Name: Victus by HP Gaming Laptop 15-fb1xxx
+00:00:00.030715 main     DMI Product Version:  
+00:00:00.030728 main     Firmware type: UEFI
+00:00:00.031078 main     Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.031100 main     Host RAM: 15573MB (15.2GB) total, 9758MB (9.5GB) available
+00:00:00.031105 main     Executable: C:\Program Files\Oracle\VirtualBox\VBoxSVC.exe
+00:00:00.031105 main     Process ID: 11968
+00:00:00.031106 main     Package type: WINDOWS_64BITS_GENERIC
+00:00:00.137201          VirtualBox: object creation starts
+00:00:00.137399          Home directory: 'C:\Users\nnaiv\.VirtualBox'
+00:00:00.137503          Installed Drivers:
+00:00:00.171240            C:\WINDOWS\system32\DRIVERS\VBoxNetLwf.sys (Version: 6.1.34.636)
+00:00:00.193302            C:\WINDOWS\system32\DRIVERS\VBoxUSBMon.sys (Version: 6.1.34.636)
+00:00:00.226037            C:\WINDOWS\system32\DRIVERS\VBoxSup.sys (Version: 6.1.34.636)
+00:00:00.256867            C:\WINDOWS\system32\DRIVERS\VBoxNetAdp6.sys (Version: 6.1.34.636)
+00:00:00.268178          Loading settings file "C:\Users\nnaiv\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:00.270215          usbLibGetDevices: Starting USB device enumeration
+00:00:00.289943          Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#5&ff49e5c&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 3
+00:00:00.290019          Getting USB descriptor (id 0) failed (dwErr=31) on hub USB#ROOT_HUB30#5&ff49e5c&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 4
+00:00:00.354024          usbLibGetDevices: Found 2 USB devices, 0 captured
+00:00:00.354062          USB: Unknown USB device detected (idVendor: 0x0408, idProduct: 0x5482)
+00:00:00.354086          USB: Unknown USB device detected (idVendor: 0x13d3, idProduct: 0x3567)
+00:00:00.377890          HostDnsMonitor: initializing
+00:00:00.384590          HostDnsMonitor: updating information
+00:00:00.384612          HostDnsMonitor: old information
+00:00:00.384613            no server entries
+00:00:00.384614            no domain set
+00:00:00.384614            no search string entries
+00:00:00.384615          HostDnsMonitor: new information
+00:00:00.384615            server 1: 192.168.0.1
+00:00:00.384615            no domain set
+00:00:00.384615            no search string entries
+00:00:00.386463          VD: VDInit finished with VINF_SUCCESS
+00:00:00.387090          VirtualBox: object created
+00:00:02.575346          Saving settings file "C:\Users\nnaiv\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:02.585678          Saving settings file "C:\Users\nnaiv\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:08.104301 main     VirtualBox: object deletion starts
+00:00:08.104665 main     HostDnsMonitor: shutting down ...
+00:00:08.104698 main     HostDnsMonitor: shut down
+00:00:08.105918 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:08.106065 main     VirtualBox: object deleted
