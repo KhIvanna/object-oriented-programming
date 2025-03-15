@@ -6,6 +6,8 @@ struct cina{
     short int kop;
 };
 
+void output();
+
 void dodav(cina x, cina y, cina& result);
 
 void mn(cina x, int z, cina& result);
