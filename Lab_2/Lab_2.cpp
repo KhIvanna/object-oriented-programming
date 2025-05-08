@@ -50,5 +50,5 @@ bool inside_tochka(const Trukutnik& t, const Tochka& p, double tolerance, bool u
 }
 
 bool Trukutniks_zero(const Trukutnik& t) {
-    return heronArea(t) == 0;
+    return heronArea(t) < 1e-4;
 }

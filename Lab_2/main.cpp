@@ -40,12 +40,12 @@ int main() {
     for (int i = 0; i < n; ++i) {
         if (useHeron) {
             if (Trukutniks_zero(t)) {
-                if (fabs(Tochku[i].x - t.A.x) < 1e-4 && fabs(Tochku[i].y - t.A.y) < 1e-4 ||
-                fabs(Tochku[i].x - t.B.x) < 1e-4 && fabs(Tochku[i].y - t.B.y) < 1e-4 ||
-                fabs(Tochku[i].x - t.C.x) < 1e-4 && fabs(Tochku[i].y - t.C.y) < 1e-4  || Tochku[i].x == t.A.x) {
-                    cout << "Tochka №" << i + 1 << " is on the boundary of the triangle." << endl;
+                if (((fabs(Tochku[i].x - t.A.x) < 1e-4) && (fabs(Tochku[i].y - t.A.y) < 1e-4)) ||
+                    ((fabs(Tochku[i].x - t.B.x) < 1e-4) && (fabs(Tochku[i].y - t.B.y) < 1e-4)) ||
+                    ((fabs(Tochku[i].x - t.C.x) < 1e-4) && (fabs(Tochku[i].y - t.C.y) < 1e-4))) {
+                    cout << "Tochka №" << i + 1 << " is on the boundary of the trukutnik." << endl;
                 } else {
-                    cout << "Tochka №" << i + 1 << " is outside the triangle." << endl;
+                    cout << "Tochka №" << i + 1 << " is outside the trukutnik." << endl;
                 }
             } else {
                 if (inside_tochka(t, Tochku[i], 1e-4, true)) {
@@ -53,30 +53,31 @@ int main() {
                     Trukutnik pbc = {t.B, t.C, Tochku[i]};
                     Trukutnik pca = {t.C, t.A, Tochku[i]};
                     if (fabs(heronArea(pab)) < 1e-4 || fabs(heronArea(pbc)) < 1e-4 || fabs(heronArea(pca)) < 1e-4) {
-                        cout << "Tochka №" << i + 1 << " is on the boundary of the triangle." << endl;
+                        cout << "Tochka №" << i + 1 << " is on the boundary of the trukutnik." << endl;
                     } else {
-                        cout << "Tochka №" << i + 1 << " is inside the triangle." << endl;
+                        cout << "Tochka №" << i + 1 << " is inside the trukutnik." << endl;
                     }
                 } else {
-                    cout << "Tochka №" << i + 1 << " is outside the triangle." << endl;
+                    cout << "Tochka №" << i + 1 << " is outside the trukutnik." << endl;
                 }
             }
         }
 
         if (!useHeron) {
-            if (inside_tochka(t, Tochku[i], 1e-4, false)) {
+            if (inside_tochka(t, Tochku[i], 1e-9, false)) {
                 double cp1 = vectordobutok(t.A, t.B, Tochku[i]);
                 double cp2 = vectordobutok(t.B, t.C, Tochku[i]);
                 double cp3 = vectordobutok(t.C, t.A, Tochku[i]);
-                if (cp1 == 0 || cp2 == 0 || cp3 == 0) {
-                    cout << "Tochka №" << i + 1 << " is on the boundary of the triangle." << endl;
+                if (fabs(cp1) < 1e-9 || fabs(cp2) < 1e-9 || fabs(cp3) < 1e-9) {
+                    cout << "Tochka № " << i + 1 << " is on the boundary of the trukutnik." << endl;
                 } else {
-                    cout << "Tochka №" << i + 1 << " is inside the triangle." << endl;
+                    cout << "Tochka № " << i + 1 << " is inside the trukutnik." << endl;
                 }
             } else {
-                cout << "Tochka №" << i + 1 << " is outside the triangle." << endl;
+                cout << "Tochka № " << i + 1 << " is outside the trukutnik." << endl;
             }
         }
     }
     return 0;
 }
+
